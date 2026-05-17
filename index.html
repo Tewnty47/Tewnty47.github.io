@@ -2,148 +2,190 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-    content="WEBCORE - Mobile-first website built with Claude AI">
-
-    <title>WEBCORE Portfolio</title>
-
+    <meta name="description" content="WEBCORE LM - Mobile-first website built with Claude AI">
+    <title>WEBCORE LM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
     <div class="container">
 
         <!-- NAVIGATION -->
         <nav class="navbar">
+            <div class="logo">WEBCORE <span class="logo-initials">LM</span></div>
 
-            <div class="logo">WEBCORE</div>
-
-            <ul class="nav-links">
-
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
-
                 <li><a href="#about">About</a></li>
-
                 <li><a href="#projects">Projects</a></li>
-
                 <li><a href="#contact">Contact</a></li>
-
             </ul>
 
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
 
 
         <!-- HERO SECTION -->
         <section id="home" class="hero">
+            <!-- LM watermark -->
+            <div class="hero-bg-initials">LM</div>
 
             <div class="hero-content">
+                <div class="hero-badge">✦ Powered by Claude AI</div>
 
-                <h1>Build Websites On Your Phone</h1>
+                <h1>Build Websites<br>
+                    <span class="gradient-text">On Your Phone</span>
+                </h1>
 
                 <p>
-                    Mobile-first development powered by Claude AI
+                    Mobile-first development. No laptop needed.<br>
+                    Just your Android and a vision.
                 </p>
 
-                <button class="cta-btn">
-                    Get Started
-                </button>
+                <div class="hero-buttons">
+                    <button class="cta-btn" id="ctaBtn">
+                        Get Started with Lebo
+                    </button>
+                    <a href="#projects" class="ghost-btn">View Projects →</a>
+                </div>
 
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Mobile Built</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">AI</span>
+                        <span class="stat-label">Powered</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Possibilities</span>
+                    </div>
+                </div>
             </div>
-
         </section>
 
 
         <!-- ABOUT SECTION -->
         <section id="about" class="about">
+            <div class="section-label">HOW IT WORKS</div>
+            <h2>The WEBCORE System</h2>
 
-            <h2>How WEBCORE Works</h2>
-
-
-            <!-- 3 BOX SYSTEM -->
             <div class="box-container">
 
-                <!-- LEFT BOX -->
-                <div class="info-box left-box">
-
+                <div class="info-box left-box reveal">
+                    <div class="box-icon">📱</div>
                     <h3>Mobile Development</h3>
-
-                    <p>
-                        Build powerful websites directly
-                        from your Android phone.
-                    </p>
-
+                    <p>Build powerful websites directly from your Android phone. No desktop required — just ideas and execution.</p>
+                    <div class="box-tag">STEP 01</div>
                 </div>
 
-
-                <!-- CENTER BOX -->
-                <div class="info-box center-box">
-
-                    <h3>WEBCORE SYSTEM</h3>
-
-                    <p>
-                        Create. Deploy. Scale.
-                    </p>
-
+                <div class="info-box center-box reveal">
+                    <div class="box-icon">⚡</div>
+                    <h3>WEBCORE Engine</h3>
+                    <p>Create. Deploy. Scale. The full development cycle simplified for mobile-first builders who move fast.</p>
+                    <div class="box-tag">STEP 02</div>
                 </div>
 
-
-                <!-- RIGHT BOX -->
-                <div class="info-box right-box">
-
+                <div class="info-box right-box reveal">
+                    <div class="box-icon">🤖</div>
                     <h3>AI Integration</h3>
-
-                    <p>
-                        Use Claude AI to accelerate
-                        development and creativity.
-                    </p>
-
+                    <p>Use Claude AI to accelerate development, generate code, and bring your creative vision to life instantly.</p>
+                    <div class="box-tag">STEP 03</div>
                 </div>
 
             </div>
-
         </section>
 
 
         <!-- PROJECTS -->
         <section id="projects" class="projects">
+            <div class="section-label">PORTFOLIO</div>
+            <h2>Projects</h2>
 
-            <h2>Your Projects</h2>
+            <div class="projects-grid">
 
-            <p class="coming-soon">
-                Coming soon...
-            </p>
+                <div class="project-card reveal">
+                    <div class="project-tag">Live</div>
+                    <h3>WEBCORE v1</h3>
+                    <p>The very site you're on. Built entirely on Android using Claude AI — proof that mobile-first works.</p>
+                    <div class="project-tech">
+                        <span>HTML</span><span>CSS</span><span>JS</span>
+                    </div>
+                    <div class="project-link">View Project →</div>
+                </div>
 
+                <div class="project-card reveal">
+                    <div class="project-tag">Coming Soon</div>
+                    <h3>Project Alpha</h3>
+                    <p>Next project in the pipeline. Stay tuned — something is brewing in the WEBCORE lab.</p>
+                    <div class="project-tech">
+                        <span>TBD</span>
+                    </div>
+                    <div class="project-link">Coming Soon →</div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-tag">Concept</div>
+                    <h3>Project Beta</h3>
+                    <p>Ideas at the design phase. The WEBCORE system keeps expanding — this one's going to be big.</p>
+                    <div class="project-tech">
+                        <span>In Progress</span>
+                    </div>
+                    <div class="project-link">In Progress →</div>
+                </div>
+
+            </div>
         </section>
 
 
         <!-- CONTACT -->
         <section id="contact" class="contact">
-
+            <div class="section-label">GET IN TOUCH</div>
             <h2>Contact</h2>
 
-            <p>
-                Your future contact section goes here.
-            </p>
+            <div class="contact-wrapper">
 
+                <div class="contact-info">
+                    <h3>Let's Build Something</h3>
+                    <p>Have a project in mind? Want to collaborate? Drop a message and Lebo will get back to you.</p>
+                    <div class="contact-items">
+                        <div class="contact-item">📍 Johannesburg, ZA</div>
+                        <div class="contact-item">🤖 Powered by WEBCORE</div>
+                        <div class="contact-item">✉️ hello@webcore.dev</div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" class="form-input" required>
+                    <input type="email" placeholder="Your Email" class="form-input" required>
+                    <textarea placeholder="Your Message" class="form-input form-textarea" required></textarea>
+                    <button type="submit" class="cta-btn form-btn">Send Message ✦</button>
+                </form>
+
+            </div>
         </section>
 
 
         <!-- FOOTER -->
         <footer>
-
-            <p>
-                © 2026 WEBCORE. Built with Claude AI.
-            </p>
-
+            <div class="footer-logo">WEBCORE <span class="logo-initials">LM</span></div>
+            <p>© 2026 WEBCORE LM. Built with Claude AI on Android.</p>
+            <p class="footer-sub">Mobile-first. AI-powered. Future-ready.</p>
         </footer>
 
     </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>
